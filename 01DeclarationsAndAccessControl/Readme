@@ -1,0 +1,38 @@
+* Be sure to understand the keywords in Java.
+
+* Understand the rules associated with creating legal identifiers and the rules associated
+  with source code declarations, including the use of package and import statements.
+
+* Understand the basic syntax of java and javac commands.
+
+* Understand the main().
+
+* Understand import and import static.
+
+* Understand access modifiers: public, protected, default and private.
+
+* abstract classes can contain both abstract and nonabstract methods, but that if even a single
+  method is marked abstract, the class must be marked abstract.
+
+* A concrete (nonabstract) subclass of an abstract class must provide implementations for all
+  the abstract methods of the superclass, but that an abstract class does not have to implement
+  the abstract methods from its superclass.
+
+* An abstract subclass can "pass the buck" to the first concrete subclass.
+
+* Understand interface implementations and that interfaces can extend another interface (even
+  multiple interfaces), and that any class that implements an interface must implement all
+  methods from all the interfaces in the inheritance tree of the interface the class is
+  implementing.
+
+* Understand the other modifiers: static, final, abstract, synchronized, etc...
+
+* There are no final objects in Java. A reference variable marked final can never be changed,
+  but the object it refers to can be modified.
+
+* final applied to methods means that subclasses cannot override them.
+
+* var-arg parameter foo(int i, String ...);
+
+* enum is a much safer and more flexible way to implement constants than was possible in earlier
+  versions of Java.

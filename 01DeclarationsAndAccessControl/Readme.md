@@ -5,16 +5,16 @@
 
 ## Executable Java Files and `main()`
 * You can compile and execute Java programs using the command-line programs javac and java, respectively. Both programs supports a variety of command-line options.
-* The only versions of `main()` methods with special powers are those versions with method signatures equivalent to public static void main(String[] args).
+* The only versions of `main()` methods with special powers are those versions with method signatures equivalent to public static `void main(String[] args)`.
 * `main()` can be overloaded.
 
 
-Imports
+## Imports
 * An import statement's only job is to save keystrokes.
 
-* You can use an asterisk (*) to search through the contents of a single package.
+* You can use an asterisk (\*) to search through the contents of a single package.
 
-* Although referred to as "static imports," the syntax is import static...
+* Although referred to as "static imports," the syntax is `import static` ...
 
 * You can import API classes and/or custom classes.
 

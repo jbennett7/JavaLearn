@@ -156,5 +156,6 @@
 * `enum` constructors can NEVER be invoked directly in code. They are always called automatically when an `enum` is initialized.
 * The semicolon at the end of an enum declaration is optional. These are legal:
   * `enum Foo { ONE, TWO, THREE }`
+
     `enum Foo { ONE, TWO, THREE };`
 * `MyEnum.values()` returns an array of `MyEnum`'s values.

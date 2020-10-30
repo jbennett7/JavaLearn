@@ -83,3 +83,26 @@
 * If your superclass does not have a no-arg constructor, you must create a constructor and insert a call to `super()` with arguments matching those of the superclass constructor.
 * Constructors are never inherited; thus they cannot be overridden.
 * A constructor can be directly invoked only by another constructor (using a call to `super()` or `this()`).
+* Regarding issues with call to `this()`:
+  * They may appear only as the first statement in a constructor.
+  * The argument list determines which overloaded constructor is called.
+  * Constructors can call constructors, and so on, but sooner or later one of them better call `super()` or the stack will explode.
+  * Calls to `this()` and `super()` cannot be in the same constructor. You can have one or the other, but never both.
+
+## Initialization Blocks
+* Use `static init` blocks-- `static { /* code here */ }`-- for code you want to have run once, when the class is first loaded. Multiple blocks run from the top down.
+* Use normal `init` blocks-- `{ /* code here }`-- for code you want to have run for every new instance, right after all the super constructors have run. Again, multiple blocks run from the top of the class down.
+
+## Statics
+* Use `static` methods to implement behaviors that are not affected by the state of any instances.
+* Use `static` variables to hold data that is class specific as opposed to instance specific-- there will be only one copy of a `static` variable.
+* All `static` members belong to the class, not to any instance.
+* A `static` method can't access an instnace variable directly.
+* Use the dot operator to access `static` members, but remember that using a reference variable with the dot operator is really a syntax trick, and the compiler will substitute the class name for the reference variable; for instnace:
+
+  `d.doStuff();`
+
+becomes
+
+  `Dog.doStuff();`
+* `static` methods can't be overridden, but they can be redefined.
